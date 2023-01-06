@@ -10,6 +10,7 @@
  * * Return: Always 0 (Success)
  *
  */
+
 char *_strchr(char *s, char c)
 
 {
