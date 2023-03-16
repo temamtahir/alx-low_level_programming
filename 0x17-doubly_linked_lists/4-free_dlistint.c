@@ -4,15 +4,15 @@
  * free_dlistint - frees a doubly linked list with only int data, no strings
  * @head: pointer to head of list
  */
-void free_dlistint(dlistint_t *mhead)
+void free_dlistint(dlistint_t *head)
 {
-	if (!mhead)
+	if (!head)
 		return;
 
-	while (mhead && mhead->next)
+	while (head && head->next)
 	{
-		mhead =mhead->next;
-		free(mhead->prev);
+		head =head->next;
+		free(head->prev);
 	}
 	free(head);
 }
